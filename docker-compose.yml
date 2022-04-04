@@ -1,13 +1,12 @@
 version: "3"
 services:
   mysql:
-    image: debezium/example-mysql:1.9
+    image: store-db-mysql
     ports:
       - "3306:3306"
     environment:
-      - MYSQL_ROOT_PASSWORD=debezium
-      - MYSQL_USER=mysqluser
-      - MYSQL_PASSWORD=mysqlpw
+      - MYSQL_ROOT_PASSWORD=horse101
+      - MYSQL_USER=root
   zookeeper:
     image: debezium/zookeeper:1.9
     ports:
